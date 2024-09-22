@@ -1,0 +1,74 @@
+/* Estilos gerais para remover margens e definir a fonte e cores padrão */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Josefin Sans";
+    color: #fff;
+    background-color: #000;
+}
+
+/* Estilo do container principal, com a imagem de fundo */
+.container {
+    background-image: url(Imagens/space.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo do título principal */
+.title {
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Estilo do subtítulo */
+.subtitle {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+/* Estilo para os botões */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo para os ícones sociais no topo da página */
+.social-icons {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
